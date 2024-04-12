@@ -1,0 +1,77 @@
+.banner-block {
+  background-image: url(../../assets/grocery-banner.webp);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-inner {
+  display: flex;
+  padding-top: 40px;
+}
+.banner-right img {
+  max-width: 580px;
+}
+.product-head {
+  font-size: 16px;
+  font-weight: 600;
+}
+.product-content {
+  font-size: 75px;
+  font-weight: 500;
+  width: 60%;
+  margin-top: 0;
+  line-height: 1.2;
+  color: #3e7d03;
+  margin-bottom: 20px;
+}
+.product-content + p {
+  width: 80%;
+  margin-bottom: 40px;
+}
+.banner-btn {
+  padding: 14px 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: 0;
+  background-color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .banner-inner {
+    display: block;
+  }
+  .product-content {
+    font-size: 40px;
+    width: 80%;
+  }
+  .banner-right img {
+    width: 400px;
+    margin-top: 30px;
+  }
+  .banner-right {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .banner-right img {
+    width: 260px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  .product-content {
+    font-size: 50px;
+    width: 80%;
+  }
+  .banner-right img {
+    width: 360px;
+    margin-top: 30px;
+  }
+  .banner-btn {
+    margin-bottom: 20px;
+  }
+}

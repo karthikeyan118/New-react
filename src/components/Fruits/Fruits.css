@@ -1,0 +1,10 @@
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.cat-card-head {
+  font-size: 20px;
+  font-weight: 600;
+}

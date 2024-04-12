@@ -1,0 +1,129 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.card-image {
+  width: 100%;
+}
+.btn {
+  padding: 13px 30px;
+  width: 100%;
+  margin-top: 20px;
+  outline: 0;
+  border: none;
+  background-color: #dee9d2;
+  color: #81b441;
+  letter-spacing: 0.7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-enter {
+  width: 40%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.price-enter input {
+  width: 70%;
+  height: 35px;
+  outline: none;
+  border: 1px solid #dee9d2;
+  padding-left: 10px;
+}
+.adjust-btn {
+  background-color: #dee9d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+}
+.pack {
+  color: #8e8e8e;
+  font-size: 13px;
+}
+strike {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-right: 10px;
+}
+.price span {
+  font-size: 20px;
+  color: #81b441;
+}
+.card-content h6 {
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.prod-name {
+  color: #8e8e8e;
+  font-size: 13px;
+  margin: 15px 0 0 0;
+}
+.offer {
+  padding: 4px 10px;
+  background-color: #eee;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 500;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-head {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100% !important;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 991px) {
+  .card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .card {
+    width: 30%;
+  }
+  .card:last-child {
+    margin-right: auto;
+    margin-left: 48px;
+  }
+}

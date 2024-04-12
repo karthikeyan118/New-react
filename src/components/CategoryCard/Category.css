@@ -1,0 +1,48 @@
+.cat-img {
+  width: 280px;
+  height: 185px;
+}
+.cat-card {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+.cat-off {
+  padding: 3px 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.cat-img + p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.cat-price {
+  margin-top: 5px;
+}
+.cat-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cat-option {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  opacity: 0;
+}
+.cat-option svg {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #81b441;
+}
+.cat-card:hover .cat-option {
+  opacity: 1;
+}
